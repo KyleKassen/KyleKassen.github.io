@@ -1,0 +1,141 @@
+* {
+    font-family: 'Proza libre', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+p, h1, h2 {
+    color: #323232;
+}
+
+p {
+    /*font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;*/
+}
+
+.container {
+    width: 960px;
+    padding: 0px 30px;
+}
+
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header li {
+    padding: 0px 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #323232;
+}
+
+
+/* About me Section */
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.banner img {
+    width: 200px;
+    border-radius: 15px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 70px;
+    text-align: justify;
+}
+
+/* The projects section */
+.projects {
+    display:flex;
+    justify-content: center;
+}
+
+.projects .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.projects summary {
+    list-style-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg");
+    cursor: pointer;
+}
+
+.projects details {
+    padding-top: 4px;
+}
+
+/* Skills Section */
+.skills {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills i {
+    font-size: 40px;
+    color: #323232;
+}
+
+.icon {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer section */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.footer p {
+    text-align: center;
+}
+
+/* Responsive Elements */
+@media only screen and (min-wdith: 750px) {
+
+   .banner .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 400px;
+    }
+
+}
