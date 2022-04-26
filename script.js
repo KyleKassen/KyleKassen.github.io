@@ -54,7 +54,7 @@ reactIcon.onmouseover = changeColor;
 reactIcon.onmouseout = resetColor;
 
 const pythonIcon = document.getElementsByClassName('fa-python')[0];
-pythonIcon.setColor = '#2DDF13';
+pythonIcon.setColor = '#366C9B';
 pythonIcon.onmouseover = changeColor;
 pythonIcon.onmouseout = resetColor;
 
