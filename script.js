@@ -88,6 +88,11 @@ dockerIcon.setColor = '#0db7ed';
 dockerIcon.onmouseover = changeColor;
 dockerIcon.onmouseout = resetColor;
 
+const awsIcon = document.getElementsByClassName('fa-aws')[0];
+awsIcon.setColor = '#FF9900';
+awsIcon.onmouseover = changeColor;
+awsIcon.onmouseout = resetColor;
+
 const microsoftIcon = document.getElementsByClassName('fa-microsoft')[0];
 microsoftIcon.setColor = '#000000';
 microsoftIcon.onmouseover = changeColor;
