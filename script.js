@@ -83,8 +83,12 @@ nodeIcon.setColor = '#689E63';
 nodeIcon.onmouseover = changeColor;
 nodeIcon.onmouseout = resetColor;
 
+const dockerIcon = document.getElementsByClassName('fa-docker')[0];
+dockerIcon.setColor = '#0db7ed';
+dockerIcon.onmouseover = changeColor;
+dockerIcon.onmouseout = resetColor;
+
 const microsoftIcon = document.getElementsByClassName('fa-microsoft')[0];
 microsoftIcon.setColor = '#000000';
 microsoftIcon.onmouseover = changeColor;
 microsoftIcon.onmouseout = resetColor;
-
