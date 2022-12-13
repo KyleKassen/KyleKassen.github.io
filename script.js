@@ -1,24 +1,28 @@
-(function () {
-    [...document.querySelectorAll(".control")].forEach(button => {
-        button.addEventListener("click", function() {
-            document.querySelector(".active-btn").classList.remove("active-btn");
-            this.classList.add("active-btn");
-            document.querySelector(".active").classList.remove("active");
-            document.getElementById(button.dataset.id).classList.add("active");
-        })
-    });
-    document.querySelector(".theme-btn").addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-    })
-})();
+// Function to change icon color on hover
+/*let changeColor = () => {
+    htmlIcon.style.transition = 'color 1s'
+    htmlIcon.style.transition = 'transform 1s'
+    htmlIcon.style.color = 'blue';
+    htmlIcon.style.transform = 'scale(1.2)';
+    //htmlIcon.style.fontSize = '60px';
+}
+let resetColor = () => {
+    htmlIcon.style.color = '';
+    htmlIcon.style.transform = '';
+}
 
+//let htmlIcon = document.getElementById('html5');
+let htmlIcon = document.getElementsByClassName('fa-html5')[0];
+htmlIcon.style.transition
+htmlIcon.onmouseover = changeColor;
+htmlIcon.onmouseout = resetColor;
+//htmlIcon.style.color = 'blue';d*/
 let changeColor = event => {
     let cTarget = event.currentTarget;
 
     cTarget.style.transition = 'all 0.4s';
     cTarget.style.color = cTarget.setColor;
     cTarget.style.transform = 'scale(1.2)'
-    cTarget.style.padding = '0px 0px 0px 7px';
 }
 
 let resetColor = event => {
@@ -26,7 +30,6 @@ let resetColor = event => {
 
     cTarget.style.color = '';
     cTarget.style.transform = '';
-    cTarget.style.padding = '0';
 }
 
 let htmlIcon = document.getElementsByClassName('fa-html5')[0];
